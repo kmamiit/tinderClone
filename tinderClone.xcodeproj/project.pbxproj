@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		44F44D7C21ABB4F700610FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F44D7B21ABB4F700610FF4 /* AppDelegate.swift */; };
-		44F44D7E21ABB4F700610FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F44D7D21ABB4F700610FF4 /* ViewController.swift */; };
 		44F44D8121ABB4F700610FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F44D7F21ABB4F700610FF4 /* Main.storyboard */; };
 		44F44D8321ABB4FB00610FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F44D8221ABB4FB00610FF4 /* Assets.xcassets */; };
 		44F44D8621ABB4FB00610FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F44D8421ABB4FB00610FF4 /* LaunchScreen.storyboard */; };
 		44F44D9121ABB4FB00610FF4 /* tinderCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F44D9021ABB4FB00610FF4 /* tinderCloneTests.swift */; };
 		44F44D9C21ABB4FB00610FF4 /* tinderCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F44D9B21ABB4FB00610FF4 /* tinderCloneUITests.swift */; };
+		44F44DAA21ABB68200610FF4 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F44DA921ABB68200610FF4 /* CardsViewController.swift */; };
+		44F44DAD21ABE0CB00610FF4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F44DAC21ABE0CB00610FF4 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		44F44D7821ABB4F700610FF4 /* tinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F44D7B21ABB4F700610FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44F44D7D21ABB4F700610FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44F44D8021ABB4F700610FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44F44D8221ABB4FB00610FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44F44D8521ABB4FB00610FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		44F44D9721ABB4FB00610FF4 /* tinderCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tinderCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F44D9B21ABB4FB00610FF4 /* tinderCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tinderCloneUITests.swift; sourceTree = "<group>"; };
 		44F44D9D21ABB4FB00610FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F44DA921ABB68200610FF4 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		44F44DAC21ABE0CB00610FF4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		44F44D7A21ABB4F700610FF4 /* tinderClone */ = {
 			isa = PBXGroup;
 			children = (
+				44F44DAB21ABB69100610FF4 /* View Controllers */,
 				44F44D7B21ABB4F700610FF4 /* AppDelegate.swift */,
-				44F44D7D21ABB4F700610FF4 /* ViewController.swift */,
 				44F44D7F21ABB4F700610FF4 /* Main.storyboard */,
 				44F44D8221ABB4FB00610FF4 /* Assets.xcassets */,
 				44F44D8421ABB4FB00610FF4 /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				44F44D9D21ABB4FB00610FF4 /* Info.plist */,
 			);
 			path = tinderCloneUITests;
+			sourceTree = "<group>";
+		};
+		44F44DAB21ABB69100610FF4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44F44DA921ABB68200610FF4 /* CardsViewController.swift */,
+				44F44DAC21ABE0CB00610FF4 /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44F44D7E21ABB4F700610FF4 /* ViewController.swift in Sources */,
+				44F44DAD21ABE0CB00610FF4 /* ProfileViewController.swift in Sources */,
 				44F44D7C21ABB4F700610FF4 /* AppDelegate.swift in Sources */,
+				44F44DAA21ABB68200610FF4 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9HA3498956;
 				INFOPLIST_FILE = tinderClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9HA3498956;
 				INFOPLIST_FILE = tinderClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
